@@ -1,0 +1,491 @@
+/* 
+    Document   : hppCSS
+    Created on : May 3, 2013, 3:28:07 PM
+    Author     : zachhollingshead
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+html, body, body div, span, object, iframe, main, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}									
+
+/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
+
+article, aside, figure, footer, header, hgroup, main, nav, section, details, summary {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
+   If this default setting for images is causing issues, you might want to replace it with a .responsive class instead. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+
+
+select, input, textarea {font: 99% sans-serif;}
+
+
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+input[type=file], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+
+
+
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }
+
+body{
+    width: 80%;
+    font-family: 'Pathway Gothic One', sans-serif;
+    
+    background-image: url(/triathlon/images/cuffs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    padding-left:10%;
+       
+}
+a:link{
+    color: #CC0000;
+}
+
+a:visited{
+    color: darkorange;
+}
+
+a:active{
+    color: yellow;
+}
+body h1{
+    color: #fff;
+   text-align: center;
+   text-shadow: 3px 3px #000000;
+   
+}
+body h3{
+    color: #fff;
+   text-align: left;
+   text-shadow: 3px 3px #CC0000;
+   font-size: 150%;
+}
+   body h2{
+    color: #fff;
+   text-align: left;
+   text-shadow: 3px 3px #CC0000;
+   font-size: 200%;
+   }
+   .facts{
+       width: 100%;
+    float: left;
+    padding-left: 10%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);
+   }
+   .aboutp{
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+   }
+   
+   .route{
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+   }
+   
+body p{
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 2px 2px #000000;
+}
+link{
+    cursor: pointer;
+}
+.swimming{
+    width: 32%;
+    float: left;
+    margin-left: 5px;
+    border: solid 2px #000;
+    
+}
+
+.runner{
+    width: 32%;
+    float: left;
+    margin-left: 5px;
+    border: solid 2px #000;
+}
+
+.biking{
+    width: 32%;
+    float: left;
+    margin-left: 5px;
+    border: solid 2px #000;
+    
+}
+.swimmingp{
+   width: 32%;
+    float: left;
+    padding-left: 5px;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.3);
+    text-shadow: 1px 1px #ff0000;
+    clear: left;
+}
+
+.runnerp{
+    width: 32%;
+    float: left;
+    padding-left: 5px;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.3);
+    text-shadow: 1px 1px #ff0000;
+   
+}
+
+.bikingp{
+   width: 32%;
+    float: left;
+    
+    padding-left: 5px;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.3);
+    text-shadow: 1px 1px #ff0000;
+}
+header h1{
+    font-size: 500%;
+    
+}
+.runnerp h2{
+    font-size: 200%;
+}
+.swimmingp h2{
+    font-size: 200%;
+}
+.bikingp h2{
+    font-size: 200%;
+}
+.foot-nav{
+    width: 100%;
+    clear: both;
+}
+.foot-nav ul li{
+    float: left;
+    
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+   width: 25%;
+}
+
+.update{
+    float:left;
+    clear: both;
+    color: darkorange;
+    
+}
+
+.update p{
+    font-size: 1em;
+}
+fieldset{
+    color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .bikeroute{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .registration{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .alis{
+      color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000; 
+   }
+   .sq{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .fish{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .copy{
+     color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;  
+   }
+   .content{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .swimroute{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .runroute{
+       color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;
+   }
+   .resources{
+     color: #fff;
+     width: 100%;
+    float: left;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.5);  
+    text-shadow: 1px 1px #000000;  
+   }
+
+
+/*.main{
+    padding:5%;
+    
+}*/
+    
+    
+    @media screen and (max-width: 480px) {
+    header nav{
+       position:fixed;
+
+	bottom:0!important;
+
+        left:0!important;
+
+	width:100%;
+
+    }
+    header nav ul{
+        list-style-position: inside;
+
+    position: relative;
+
+    left: 0;
+
+    top: 0;
+
+    z-index: 10;
+
+        border: 2px solid #000000;
+         }
+         header nav li{
+             float:left;
+
+    transition: all 0.25s ease 0s;
+
+	position:relative;
+
+	text-align:center;
+width:33.333%;
+
+	padding: 2px 0px;
+         }
+         
+         header nav li a{
+             padding: 2px 0px;
+
+	
+
+	width:33.333%;
+
+         }
+         .foot-nav{
+             clear: both;
+
+	padding-bottom:200px;
+
+	width:100%;
+
+         } 
+         .contact{
+             width: 100%;
+         }
+         header img{
+             width: 100%;
+             
+             
+         }
+         .main{
+             width: 100%;
+         }
+         body{
+             height:80%;
+         }
+        
+    }
+    /* Medium Screens */
+@media screen and (max-width: 768px) {}
+/* @media screen and (min-width: 480px) {} */
+
+/* Large Screens */
+@media screen and (max-width: 1299px) {}
+/* @media screen and (min-width: 960px) {} */
+
+/* Very large Screens */
+@media screen and (max-width: 1300px) {}
+/* @media screen and (min-width: 960px) {} */
